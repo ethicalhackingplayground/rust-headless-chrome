@@ -25,7 +25,6 @@ use crate::util;
 use super::fetcher::{Fetcher, FetcherOptions};
 use std::collections::HashMap;
 
-#[derive(Clone)]
 pub struct Process {
     child_process: TemporaryProcess,
     pub debug_ws_url: Url,
