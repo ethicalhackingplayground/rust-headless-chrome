@@ -70,11 +70,9 @@ pub mod transport;
 /// While the Chrome DevTools Protocl (CDTP) does define some methods in a
 /// ["Browser" domain](https://chromedevtools.github.io/devtools-protocol/tot/Browser)
 /// (such as for resizing the window in non-headless mode), we currently don't implement those.
-#[derive(Clone)]
 pub struct Browser {
     inner: Arc<BrowserInner>,
 }
-#[derive(Clone)]
 pub struct BrowserInner {
     process: Option<Process>,
     transport: Arc<Transport>,
